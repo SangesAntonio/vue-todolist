@@ -25,7 +25,7 @@ const app = new Vue({
             {text: 'Preparare il caffè', done: true,},
             {text: 'Pagare le multe', done: true,},
             {text: 'Trovare un lavoro', done: true,},
-            {text: 'Accendere la macchina', done: true,},
+            {text: 'Accendere la macchina', done: false,},
         ]
     },
     methods:{
@@ -34,11 +34,22 @@ const app = new Vue({
         },
         addTask(){
             const newTask = this.newTask.trim();
-            this.tasks.push({text: newTask, done: false,})
+            if(newTask){
+                this.tasks.push({text: newTask, done: true,})
+            }
             this.newTask= '';
-
             //this.tasks=[...this.tasks, this.newTask]
+        },
+        doneTask(){
+
+        },
+        classDone(index){
+            return this.tasks[index].done == false ? 'far fa-check-square': 'far fa-square';
+                
         }
+
+
+
 
     },
 })
