@@ -31,6 +31,13 @@ const app = new Vue({
     methods:{
         dellTask(index){
             this.tasks.splice(index,1)
+        },
+        addTask(){
+            const newTask = this.newTask.trim();
+            this.tasks.push({text: newTask, done: false,})
+            this.newTask= '';
+
+            //this.tasks=[...this.tasks, this.newTask]
         }
 
     },
