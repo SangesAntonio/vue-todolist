@@ -29,7 +29,9 @@ const app = new Vue({
         ]
     },
     methods:{
-
+        dellTask(index){
+            this.tasks.splice(index,1)
+        }
 
     },
 })
