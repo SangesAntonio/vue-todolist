@@ -27,7 +27,7 @@
 
       <!--Input per nuova task-->
       <div class="input-group mb-3 col-12 mt-4">
-        <input type="text" class="form-control" v-model='newTask'>
+        <input type="text" class="form-control" v-model='newTask' @keyup.enter='addTask()'>
         <button class="btn btn-outline-secondary" type="button" @click='addTask()' >Aggiungi</button>
       </div>
       
