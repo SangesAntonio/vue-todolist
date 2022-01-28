@@ -51,6 +51,7 @@ const app = new Vue({
         },
         selectAll(){
             
+            this.tasks.done = false;
         }
 
 
