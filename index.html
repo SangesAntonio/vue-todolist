@@ -35,8 +35,8 @@
       <div class="d-flex justify-content-center ">
         <ul class="list-group mt-5 w-75  ">
           <li v-for='(task, index) in tasks' class="list-group-item d-flex justify-content-between" :class='{done: !task.done}'>
-            <div class="text-cs">
-              <i  :class='classDone(index)' @click='doneTask(index)'></i>
+            <div class="text-cs" @click='doneTask(index)'>
+              <i  :class='classDone(index)' ></i>
               {{task.text}}
             </div>
             <i class="fas fa-trash-alt" @click='dellTask(index)'></i>
