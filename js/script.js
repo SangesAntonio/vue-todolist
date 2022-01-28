@@ -44,14 +44,17 @@ const app = new Vue({
             return this.tasks[index].done = !this.tasks[index].done
         },
         classDone(index){
-            return this.tasks[index].done == false ? 'far fa-check-square': 'far fa-square'; 
+            return this.tasks[index].done == false ? 'far fa-check-square green': 'far fa-square'; 
         },
         dellAll(){
             this.tasks= [];
         },
-        selectAll(){
-            
-            this.tasks.done = false;
+        selectAll(value){
+            const selectedTask = this.tasks.map((task)=>{
+
+                return task.done =value
+
+            })
         }
 
 

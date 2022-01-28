@@ -27,8 +27,8 @@
 
       <!--Input per nuova task-->
       <div class="btn-group mt-4 m-auto d-flex justify-content-center" role="group" aria-label="Basic mixed styles example">
-        <button type="button" class="btn btn-warning" @click='selectAll()'>Deseleziona tutto</button>
-        <button type="button" class="btn btn-success" @click='selectAll()'>Seleziona tutto</button>
+        <button type="button" class="btn btn-warning" @click='selectAll(true)'>Deseleziona tutto</button>
+        <button type="button" class="btn btn-success" @click='selectAll(false)'>Seleziona tutto</button>
         <button type="button" class="btn btn-danger" @click='dellAll()'>Elimina tutto</button>
       </div>
       <div class="input-group mb-3 col-12 mt-4">

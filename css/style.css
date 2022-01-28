@@ -6,6 +6,9 @@
 .done .text-cs{
     text-decoration: line-through;
 }
+.green{
+    color: rgb(4, 161, 38);
+}
 .fas,
 .far{
     cursor: pointer;
