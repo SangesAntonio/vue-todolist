@@ -26,6 +26,11 @@
       </div>
 
       <!--Input per nuova task-->
+      <div class="btn-group mt-4 m-auto d-flex justify-content-center" role="group" aria-label="Basic mixed styles example">
+        <button type="button" class="btn btn-warning">Deseleziona tutto</button>
+        <button type="button" class="btn btn-success">Seleziona tutto</button>
+        <button type="button" class="btn btn-danger" @click='dellAll()'>Elimina tutto</button>
+      </div>
       <div class="input-group mb-3 col-12 mt-4">
         <input type="text" class="form-control" v-model='newTask' @keyup.enter='addTask()'>
         <button class="btn btn-outline-secondary" type="button" @click='addTask()' >Aggiungi</button>
