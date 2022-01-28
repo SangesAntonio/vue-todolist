@@ -26,7 +26,7 @@
     <!--Lista -->
     <div class="container d-flex justify-content-center ">
       <ul class="list-group mt-5 w-50  ">
-        <li class="list-group-item">An item</li>
+        <li v-for='(task, index) in tasks' class="list-group-item">{{task.text}}</li>
       </ul>
     </div>
   </div>

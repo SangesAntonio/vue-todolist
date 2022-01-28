@@ -20,6 +20,14 @@ console.log('JS OK', Vue);
 const app = new Vue({
     el:'#root',
     data:{
+        tasks:[
+            {text: 'Preparare il caffè', done: true,},
+            {text: 'Pagare le multe', done: true,},
+            {text: 'Trovare un lavoro', done: true,},
+            {text: 'Accendere la macchina', done: true,},
+        ]
+    },
+    methods:{
         
-    }
+    },
 })
