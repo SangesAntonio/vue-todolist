@@ -40,8 +40,8 @@ const app = new Vue({
             this.newTask= '';
             //this.tasks=[...this.tasks, this.newTask]
         },
-        doneTask(){
-
+        doneTask(index){
+            return this.tasks[index].done = !this.tasks[index].done
         },
         classDone(index){
             return this.tasks[index].done == false ? 'far fa-check-square': 'far fa-square';
