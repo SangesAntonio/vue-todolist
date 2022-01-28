@@ -20,6 +20,7 @@ console.log('JS OK', Vue);
 const app = new Vue({
     el:'#root',
     data:{
+        newTask:'',
         tasks:[
             {text: 'Preparare il caffè', done: true,},
             {text: 'Pagare le multe', done: true,},
@@ -28,6 +29,7 @@ const app = new Vue({
         ]
     },
     methods:{
-        
+
+
     },
 })
